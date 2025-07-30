@@ -73,10 +73,6 @@ We evaluate and compare both models based on:
 
 ---
 
-## 📁 Project Structure
-
-
-
 
 ## 📁 Project Structure
 ```Stock-Price-Prediction-LSTM-GRU/
