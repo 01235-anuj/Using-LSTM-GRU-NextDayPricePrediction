@@ -34,4 +34,13 @@ The performance of both models was compared using:
 
 
 ## 📁 Project Structure
+📁 Stock-Price-Prediction-LSTM-GRU/
+│
+├── 📁 notebook/
+│   ├── A_Comparison_of_LSTM_and_GRU_Models_for_Predicting_Next_Day_Barclays_Stock_Price.ipynb
+│   └── closing_price_comparison.png
+│
+├── 📄 README.md
+├── 📄 requirements.txt
+├── 📄 .gitignore
 
