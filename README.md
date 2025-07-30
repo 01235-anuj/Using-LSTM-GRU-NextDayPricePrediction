@@ -29,7 +29,7 @@ The performance of both models was compared using:
 
 ### 📷 Predicted vs Actual Closing Price
 
-![Closing Price Comparison](notebook/closing_price_comparison.png)
+![Closing Price Comparison]("C:\Users\mishr\OneDrive\Pictures\Screenshots\Screenshot 2025-07-30 113819.png")
 
 
 ## 📁 Project Structure
