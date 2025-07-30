@@ -27,12 +27,9 @@ The performance of both models was compared using:
 - 📐 RMSE (Root Mean Squared Error)
 - 📊 Visual comparison of predicted vs actual prices
 
-## ▶️ How to Run
+### 📷 Predicted vs Actual Closing Price
 
-1. Clone the repository:
-```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd your-repo-name
+![Closing Price Comparison](notebook/closing_price_comparison.png)
 
 
 ## 📁 Project Structure
