@@ -68,7 +68,8 @@ We evaluate and compare both models based on:
 
 ### 📷 Predicted vs Actual Closing Price
 
-<img src="notebook/closing_price_comparison.png" alt="Closing Price Comparison" width="600"/>
+<img width="593" height="318" alt="image" src="https://github.com/user-attachments/assets/d2facade-ab18-48ae-a26a-702c5a02676d" />
+
 
 ---
 
