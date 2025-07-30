@@ -2,34 +2,78 @@
 
 This project compares **LSTM** and **GRU** deep learning models to predict the **next day's closing stock price of Barclays (BCS)** using historical data fetched via the `yfinance` API.
 
+---
+
 ## 📌 Problem Statement
 
-Accurately forecasting future stock prices is a challenging task due to the complex and volatile nature of financial markets. This project aims to evaluate and compare LSTM and GRU models for next-day stock price prediction.
+Accurately forecasting stock prices is a critical task in the financial industry. Traditional methods often struggle with time-series dependencies, noise, and volatility. This project aims to tackle this by applying **Recurrent Neural Network (RNN)** based models — specifically **LSTM** and **GRU** — which are well-suited for sequence prediction problems.
+
+The goal is to predict the **next day's closing price** using past closing prices and compare which architecture performs better in terms of accuracy and generalization.
+
+---
 
 ## 📊 Data Source
 
-- Historical stock data fetched from **Yahoo Finance** using the `yfinance` library.
-- Ticker used: `BCS` (Barclays)
+We use **Yahoo Finance** to download daily historical stock data for **Barclays PLC (BCS)** using the `yfinance` Python package.
+
+Key attributes:
+- **Ticker**: `BCS`
+- **Features used**: `Close` price only
+- **Timeframe**: Last several years of daily data
+- **Data Preprocessing**:
+  - Normalization using MinMaxScaler
+  - Sliding window technique to create sequences of past prices
+
+---
 
 ## 🧠 Models Used
 
-- **LSTM (Long Short-Term Memory)**
-- **GRU (Gated Recurrent Unit)**
+Two RNN-based architectures are implemented and compared:
 
-Both models are implemented using TensorFlow/Keras and trained on historical closing prices.
+### 🔷 LSTM (Long Short-Term Memory)
+- Capable of learning long-term dependencies
+- Avoids vanishing gradient problems
+- Widely used in time-series forecasting
 
+### 🔷 GRU (Gated Recurrent Unit)
+- Simplified version of LSTM with fewer parameters
+- Faster training time
+- Often performs comparably to LSTM with similar accuracy
 
-## 📈 Evaluation
+Both models are built using **TensorFlow/Keras**, and trained using the same dataset, same sequence lengths, and same epochs for fair comparison.
 
-The performance of both models was compared using:
+---
 
-- 📉 Loss Curves
-- 📐 RMSE (Root Mean Squared Error)
-- 📊 Visual comparison of predicted vs actual prices
+## ⚙️ Model Architecture
+
+- **Input Layer**: Sliding window sequences (e.g., 60 timesteps)
+- **Hidden Layers**:
+  - LSTM or GRU with 50–100 units
+  - Dropout for regularization
+- **Dense Output Layer**: 1 neuron (predicting next day's closing price)
+- **Loss Function**: Mean Squared Error (MSE)
+- **Optimizer**: Adam
+
+---
+
+## 📈 Evaluation Metrics
+
+We evaluate and compare both models based on:
+
+- **Training and Validation Loss Curves**
+- **RMSE (Root Mean Squared Error)** — lower is better
+- **Visual Comparison** of:
+  - Predicted vs Actual closing prices
+  - Time-series plots for clarity
 
 ### 📷 Predicted vs Actual Closing Price
 
-<img width="591" height="317" alt="image" src="https://github.com/user-attachments/assets/4cf08fbb-61ba-467f-a9f8-63ffe024a227" />
+<img src="notebook/closing_price_comparison.png" alt="Closing Price Comparison" width="600"/>
+
+---
+
+## 📁 Project Structure
+
 
 
 
