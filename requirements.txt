@@ -5,4 +5,5 @@ matplotlib
 scikit-learn
 tensorflow==2.13.0
 joblib
+yfinance
 python-3.10
